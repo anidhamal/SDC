@@ -1,9 +1,8 @@
-# Vehicle Detection
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+## Writeup Template
 
-
-The Project
 ---
+
+**Vehicle Detection Project**
 
 The goals / steps of this project are the following:
 
@@ -17,12 +16,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: output_images/test_img_result_1.png “Test Image 1“
-[image2]: output_images/test_img_result_2.png “Test Image 2“
-[image3]: output_images/test_img_result_3.png “Test Image 3“
-[image4]: output_images/test_img_result_4.png “Test Image 4“
-[image5]: output_images/test_img_result_5.png “Test Image 5“
-[image6]: output_images/test_img_result_6.png “Test Image 6“
+[image1]: ./output_images/test_img_result_1.png "Test Image 1"
+[image2]: ./output_images/test_img_result_2.png "Test Image 2"
+[image3]: ./output_images/test_img_result_3.png "Test Image 3"
+[image4]: ./output_images/test_img_result_4.png "Test Image 4"
+[image5]: ./output_images/test_img_result_5.png "Test Image 5"
+[image6]: ./output_images/test_img_result_6.png "Test Image 6"
 [video1]: project_result.mp4 "Video"
 
 
