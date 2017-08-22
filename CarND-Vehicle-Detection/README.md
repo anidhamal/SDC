@@ -38,10 +38,15 @@ In this step, I wrote couple of helper functions to extract features of images l
 I used these data to train LinearSVC classifier. I saved the trained classifier locally. I verified that my classifier is working as expected by running it against test images.
 
 ![alt text][image1]
+
 ![alt text][image2]
+
 ![alt text][image3]
+
 ![alt text][image4]
+
 ![alt text][image5]
+
 ![alt text][image6]
 
 ###Sliding Window & Heat map
@@ -51,6 +56,8 @@ In this step, I used sliding window technique to look for cars in specific part 
 ### Processed Video detecting cars (video)
 
 Here's a [link to my video result](./project_result.mp4)
+
+You can find the details about code in `Vehicle_Detection.ipynb`
 
 ---
 
