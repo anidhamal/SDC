@@ -18,12 +18,12 @@ The goals / steps of this project are the following:
 [image2]: ./examples/visualization_dataset_test.png "Visualization Test Dataset"
 [image3]: ./examples/original.png "Original"
 [image4]: ./examples/gray_normalized.png "Grayscale n Normalized"
-[image5]: ./test_images/test1.jpg "Traffic Sign 1"
-[image6]: ./test_images/test2.jpg "Traffic Sign 2"
-[image7]: ./test_images/test3.jpg "Traffic Sign 3"
-[image8]: ./test_images/test4.jpg "Traffic Sign 4"
-[image9]: ./test_images/test5.jpg "Traffic Sign 5"
-[image_test1]: ./test_images/test6.jpg "Traffic Sign 6"
+[image5]: ./test_images/raw/straight.png "Traffic Sign 1"
+[image6]: ./test_images/raw/stop.jpeg "Traffic Sign 2"
+[image7]: ./test_images/raw/priority_road.jpeg "Traffic Sign 3"
+[image8]: ./test_images/raw/straight_or_left.jpg "Traffic Sign 4"
+[image9]: ./test_images/raw/speed_limit30.jpg "Traffic Sign 5"
+[image_test1]: ./test_images/raw/wild-animals.jpg "Traffic Sign 6"
 [image_test2]: ./examples/softmax_probability.png "Softmax Probability"
 
 ## Rubric Points
@@ -134,6 +134,17 @@ Here are Six German traffic signs that I found on the web:
 
 ![alt text][image_test1]
 
+First image is easy to identify. It doesn’t have any difficult characteristics.
+
+Second image is little difficult as it has white and blue background with more brightness.
+
+Third image is difficult to identify as image is taken with an angle.
+
+Forth image is easy to identify.
+
+Fifth image is difficult as it has green background but right brightness and contrast
+
+Sixth image is difficult to identify as it’s not clear due to low brightness and dark green background
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -142,14 +153,17 @@ Here are the results of the prediction and probability:
 | Image			        |     Prediction	        	|           Probability                  |
 |:-----------------------------:|:-------------------------------------:| :-------------------------------------:|
 | Ahead only      		| Ahead only   				| 	1.0				 |
-| Stop     			| Stop 					|	1.0				 |
-| Road Work			| Priority Road				|	1.0				 |
-| Go Straight or Left	      	| Go Straight or Left			|	1.0				 |
-| Speed limit (30km/h)		| Speed limit (30km/h)      		|	1.0				 |
-| Turn Right ahead		| Turn Right ahead      		|	1.0				 |
+| Stop     			| Stop 					|	0.98				 |
+| Priority Road			| Priority Road				|	0.99				 |
+| Go Straight or Left	      	| Go Straight or Left			|	0.99				 |
+| Speed limit (30km/h)		| Speed limit (30km/h)      		|	0.89				 |
+| Wild Animals Crossing		| Double Curve		      		|	0.92				 |
+
 
 
 ![alt text][image_test2]
 
+
+As you can see in the above image, The model was able to correctly able to identify 5 out of 6 images which gives accuracy of 83.3%. This favorably compares to the accuracy on the test set of 95% compared to the small data set of German signs.
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
