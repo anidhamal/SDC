@@ -75,7 +75,7 @@ hog_feat = True # HOG features on or off
 
 In this step, I used sliding window technique to look for cars in specific part of the image. There were lot of false positives and duplications which was avoided using heat map.
 
-I used following params to find the car in following frames
+I used following params to find the car in following window frames as it gave more successful results
 ```
 1. ystart = 350, ystop = 500, xstart= 550, xstop= 850, scale = 1.25
 2. ystart = 350, ystop = 700, xstart= 200, xstop= 500, scale = 1.51
@@ -83,6 +83,13 @@ I used following params to find the car in following frames
 4. ystart = 350, ystop = 700, xstart= 200, xstop= 500, scale = 1.51
 5. ystart = 350, ystop = 700, xstart= 700, xstop= 1280, scale = 1.51 
 ```
+
+These windows include
+1. Rectangle in front of the car with scale 1.25 (as cars will be smaller in that area)
+2. Rectangle in left side of the car with scale 1.51 (as cars will be little larger in that area)
+3. Rectangle in right side of the car with scale 1.51 (as cars will be little larger in that area)
+4. Rectangle in left side of the car with scale 1.68 (as cars will be larger in that area)
+5. Rectangle in right side of the car with scale 1.68 (as cars will be larger in that area) 
 
 ### Processed Video detecting cars (video)
 
